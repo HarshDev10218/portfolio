@@ -120,6 +120,7 @@ p {
     padding: 0 10%;
     background-color: var(--bg-color);
     transition: background-color 0.4s ease;
+    position: relative; /* 🌟 CRUCIAL: Add this line so the mouse anchors to the bottom! */
 }
 
 .hero-content {
@@ -488,4 +489,69 @@ p {
 }
 .btn-resume:hover {
     background-color: rgba(109, 151, 236, 0.1);
+}
+
+/* ==========================================
+   10. ANIMATED SCROLL INDICATOR (MOUSE)
+   ========================================== */
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px; /* Aligns it nicely at the bottom of the hero screen */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    z-index: 5;
+}
+
+/* The Mouse Body */
+.mouse {
+    width: 26px;
+    height: 42px;
+    border: 2px solid var(--text-muted);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    padding-top: 6px;
+    transition: border-color 0.4s ease;
+}
+
+/* The Moving Wheel Inside */
+.wheel {
+    width: 4px;
+    height: 8px;
+    background-color: var(--accent-blue);
+    border-radius: 2px;
+    animation: scrollWheel 1.6s infinite ease-in-out;
+}
+
+/* Tiny text beneath the mouse */
+.scroll-text {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--text-muted);
+    font-weight: 600;
+    transition: color 0.4s ease;
+}
+
+/* 🔄 The Wheel Animation Logic */
+@keyframes scrollWheel {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(10px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
 }
