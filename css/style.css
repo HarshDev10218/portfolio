@@ -555,3 +555,20 @@ p {
         opacity: 0;
     }
 }
+
+/* ==========================================
+   11. MOBILE RESPONSIVENESS FIX FOR MOUSE
+   ========================================== */
+@media (max-width: 768px) {
+    /* Hide the scroll mouse on mobile/tablet screen sizes */
+    .scroll-indicator {
+        display: none !important;
+    }
+    
+    /* Give the hero section a bit more breathing room on mobile */
+    .hero {
+        min-height: auto;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+}
