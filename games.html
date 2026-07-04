@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshith Dupam | Game Development Suite</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific page level layouts for the interactive arcade suite mapping */
+        .arcade-hero {
+            text-align: center;
+            padding: 60px 10%;
+            background: linear-gradient(180deg, rgba(79, 70, 229, 0.05) 0%, transparent 100%);
+        }
+        .game-showcase-card {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+        @media (min-width: 768px) {
+            .game-showcase-card { grid-template-columns: 1.2fr 1.8fr; }
+        }
+        .asset-preview-box {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px dashed var(--glass-border);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            gap: 15px;
+        }
+        .asset-thumbnail {
+            image-rendering: pixelated;
+            filter: drop-shadow(0 0 8px var(--accent-blue));
+            transition: transform 0.3s ease;
+        }
+        .game-showcase-card:hover .asset-thumbnail {
+            transform: scale(1.08);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="scroll-progress"></div>
+
+    <header class="navbar">
+        <h3 class="logo">Harshith.dev</h3>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Software Architecture</a>
+            <a href="games.html" class="active">Game Suite</a>
+            <button id="theme-toggle" class="toggle-btn">🌙</button>
+        </nav>
+    </header>
+
+    <section class="arcade-hero">
+        <h1 class="section-title" style="margin-bottom: 10px;">Interactive Game Studio</h1>
+        <p style="max-width: 650px; margin: 0 auto 30px auto;">
+            Deploying mathematical optimizations, collision matrices, and low-latency rendering loops to craft high-stakes, addictive real-time gaming environments.
+        </p>
+    </section>
+
+    <section class="projects" style="padding-top: 0;">
+        <div class="container" style="max-width: 1100px; margin: 0 auto;">
+            
+            <div class="glass-card game-showcase-card">
+                <div class="asset-preview-box">
+                    <div style="font-size: 11px; color: var(--text-muted); font-family: monospace;">// VECTOR_SCHEMATICS</div>
+                    <div style="display: flex; gap: 10px; align-items: center; justify-content: center;">
+                        <img src="monster.png" alt="NSP Enemy Engine Sprite" class="asset-thumbnail" style="width: 64px; height: 64px; object-fit: contain;">
+                    </div>
+                    <div class="project-tags" style="margin: 0; justify-content: center;">
+                        <span>Canvas2D Rendering</span>
+                        <span>State Machine AI</span>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h2 style="color: var(--text-primary); margin-bottom: 10px;">N//S//P — Neon Survival Protocol</h2>
+                        <p style="margin-bottom: 15px; font-size: 15px; line-height: 1.6;">
+                            An endless 2D arcade survival game architected over a React core loop backed by custom Supabase client storage modules. Features advanced client authorization and high-performance coordinate calculations.
+                        </p>
+                        <div style="font-size: 14px; color: var(--text-secondary); margin-bottom: 15px;">
+                            <strong>Core Subsystems:</strong>
+                            <ul style="margin-left: 20px; margin-top: 5px; line-height: 1.6;">
+                                <li><strong>Combat Matrix:</strong> Object-oriented frame detection with progressive loop multiplier buffs.</li>
+                                <li><strong>Economy Layer:</strong> Persistent live wallet syncing data changes straight to backend database schemas.</li>
+                                <li><strong>Boss Logic:</strong> Section anchor bosses shifting movement tracking strategies as health updates.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 15px; align-items: center; flex-wrap: wrap;">
+                        <a href="https://github.com/HarshDev10218" target="_blank" class="btn-primary" style="padding: 8px 20px; font-size: 14px; text-decoration: none;">Source Code Core &rarr;</a>
+                        <span style="font-size: 12px; color: var(--text-muted); font-family: monospace;">Database Ref: Supabase</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card game-showcase-card">
+                <div class="asset-preview-box">
+                    <div style="font-size: 11px; color: var(--text-muted); font-family: monospace;">// ENGINE_SUBSYSTEMS</div>
+                    <div style="font-size: 44px; filter: drop-shadow(0 0 10px var(--accent-blue)); animation: pandaFloat 3s ease-in-out infinite;">🚀</div>
+                    <div class="project-tags" style="margin: 0; justify-content: center;">
+                        <span>Godot Engine</span>
+                        <span>GDScript</span>
+                        <span>OOP Design</span>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h2 style="color: var(--text-primary); margin-bottom: 10px;">Space Defenders</h2>
+                        <p style="margin-bottom: 15px; font-size: 15px; line-height: 1.6;">
+                            A retro-inspired 2D space shooter architecture implementing custom physics, object-oriented collision tracking, and a decoupled event loop structure built using the Godot engine framework.
+                        </p>
+                        <div style="font-size: 14px; color: var(--text-secondary); margin-bottom: 15px;">
+                            <strong>Engineering Features:</strong>
+                            <ul style="margin-left: 20px; margin-top: 5px; line-height: 1.6;">
+                                <li><strong>Custom Physics:</strong> Vector-based velocity handling, inertia constraints, and smooth viewport bounds clamping.</li>
+                                <li><strong>Decoupled Event Loop:</strong> Signal-driven UI rendering decoupled from active physics computing frames.</li>
+                                <li><strong>Entity Pooling:</strong> Optimized tracking pipelines for rapid laser/bullet instantiation cycles.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://github.com/HarshDev10218" target="_blank" class="btn-primary" style="padding: 8px 20px; font-size: 14px; text-decoration: none;">Explore Repository &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card game-showcase-card">
+                <div class="asset-preview-box">
+                    <div style="font-size: 11px; color: var(--text-muted); font-family: monospace;">// ENGINE_IDENTIFIERS</div>
+                    <img src="snake.png" alt="Snake" class="asset-thumbnail" style="width: 64px; height: 64px; object-fit: contain;">
+                    <div class="project-tags" style="margin: 0; justify-content: center;">
+                        <span>Pygame Framework</span>
+                        <span>Grid Coordinates</span>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h2 style="color: var(--text-primary); margin-bottom: 10px;">Retro Snake Simulator</h2>
+                        <p style="margin-bottom: 15px; font-size: 15px; line-height: 1.6;">
+                            A modular Pygame loop running exact geometric tile tracking configurations. Implements smooth event listeners and clean directional state handling to avoid collision bugs.
+                        </p>
+                        <div style="font-size: 14px; color: var(--text-secondary); margin-bottom: 15px;">
+                            <strong>Engineering Features:</strong>
+                            <ul style="margin-left: 20px; margin-top: 5px; line-height: 1.6;">
+                                <li><strong>Memory Pipeline:</strong> Real-time asynchronous profile storage reading and updating high score records across game reboots.</li>
+                                <li><strong>Collision Guardrails:</strong> Self-referential arrays constantly verifying target positions to flag intersections instantly.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://github.com/HarshDev10218/DSA-Visualization" target="_blank" class="btn-secondary" style="padding: 8px 20px; font-size: 14px; text-decoration: none;">Review Game Logic</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" style="padding: 40px 10%; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <div class="animated-avatar-wrapper">
+            <img src="Panda.jpg" alt="Cute Panda Developer Avatar" class="cyber-avatar">
+        </div>
+        <p style="font-size: 13px; font-family: monospace; color: var(--text-muted); margin-top: 20px;">// CHASSIS SIGNATURE IDENTIFIED: HARSHITH DUPAM</p>
+    </section>
+
+    <div class="panda-assistant-container">
+        <div class="panda-speech-bubble" id="panda-bubble">
+            // CORE_UPLINK_ESTABLISHED
+        </div>
+        <div class="panda-avatar-trigger" id="panda-avatar" title="Click to ping system assistant">
+            🐼
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            
+            // --- 1. LIVE FLOATING PANDA ASSISTANT CONTROLLER ---
+            const pandaBubble = document.getElementById("panda-bubble");
+            const pandaAvatar = document.getElementById("panda-avatar");
+
+            const pandaQuotes = [
+                ">> System status: Nominal. Python algorithms running smooth.",
+                ">> Framework check: CBIT 10.0 CGPA layer fully compiled.",
+                ">> N//S//P survival vectors initialized. Clear to engage.",
+                ">> Remember to push your commits to the branch code.",
+                ">> Need responsive front-end configurations? Handled.",
+                ">> Testing core data structures... Loops verified.",
+                ">> Space Defenders physics metrics rendering successfully."
+            ];
+
+            let quoteTimeout;
+
+            function triggerPandaSpeech() {
+                clearTimeout(quoteTimeout);
+                const randomQuote = pandaQuotes[Math.floor(Math.random() * pandaQuotes.length)];
+                pandaBubble.textContent = randomQuote;
+                pandaBubble.classList.add("active");
+
+                quoteTimeout = setTimeout(() => {
+                    pandaBubble.classList.remove("active");
+                }, 4500);
+            }
+
+            if (pandaAvatar && pandaBubble) {
+                pandaAvatar.addEventListener("click", triggerPandaSpeech);
+
+                // Automated boot reminder message setup
+                setTimeout(() => {
+                    pandaBubble.textContent = ">> Uplink complete. Welcome to Harshith's game suite core.";
+                    pandaBubble.classList.add("active");
+                    setTimeout(() => pandaBubble.classList.remove("active"), 4000);
+                }, 2500);
+            }
+
+            // --- 2. THEME ENGINE TOGGLE CONTROLLER ---
+            const themeToggle = document.getElementById("theme-toggle");
+            if (themeToggle) {
+                themeToggle.addEventListener("click", () => {
+                    document.body.classList.toggle("light-mode");
+                    themeToggle.textContent = document.body.classList.contains("light-mode") ? "☀️" : "🌙";
+                });
+            }
+        });
+
+        // --- 3. GLOBAL SCROLL PROGRESS TRACKER ---
+        window.addEventListener("scroll", () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            const progressBar = document.getElementById("scroll-progress");
+            if (progressBar) {
+                progressBar.style.width = scrolled + "%";
+            }
+        });
+    </script>
+</body>
+</html>
