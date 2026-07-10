@@ -8,7 +8,6 @@
 </head>
 <body>
 
-    <!-- Scroll Progress Indicator Bar Section -->
     <div id="scroll-progress"></div>
 
     <header class="navbar">
@@ -21,7 +20,7 @@
         </nav>
     </header>
 
-    <!-- 📊 UPGRADED GITHUB METRICS SECTION (100% UPTIME TELEMETRY) -->
+    <!-- 📊 LIVE REPOSITORY TELEMETRY DASHBOARD -->
     <section class="projects">
         <h2 class="section-title">Ecosystem Telemetry Dashboard</h2>
         <div class="projects-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
@@ -32,8 +31,8 @@
                     <h3 style="color: var(--accent-blue); margin-bottom: 15px;">⚡ GITHUB_NODE_STATS</h3>
                     <ul style="list-style: none; line-height: 2; font-size: 14px;">
                         <li>>> USER: <span style="color: var(--text-primary);">HarshDev10218</span></li>
-                        <li>>> REPOSITORIES: <span style="color: var(--text-primary);">12+ Active Cores</span></li>
-                        <li>>> DEPLOYMENTS: <span style="color: var(--text-primary);">Production Live</span></li>
+                        <li>>> TOTAL DATA INDEXED: <span style="color: var(--text-primary);">930,465 Bytes</span></li>
+                        <li>>> FILTERED REPOSITORIES: <span style="color: var(--text-primary);">20 Cores Rendered</span></li>
                         <li>>> SYSTEM_STATUS: <span style="color: #10b981; font-weight: bold;">ONLINE</span></li>
                     </ul>
                 </div>
@@ -45,21 +44,33 @@
                 <h3 style="color: var(--accent-blue); margin-bottom: 15px;">📊 ENGINE_LANG_DISTRIBUTION</h3>
                 <div style="display: flex; flex-direction: column; gap: 12px; font-size: 13px;">
                     <div>
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 4px;"><span>Python</span><span>65%</span></div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 4px;"><span>JavaScript</span><span>44.7%</span></div>
                         <div style="width: 100%; height: 6px; background: rgba(255,255,255,0.05); border-radius: 3px;">
-                            <div style="width: 65%; height: 100%; background: #3572A5; border-radius: 3px;"></div>
+                            <div style="width: 44.7%; height: 100%; background: #f1e05a; border-radius: 3px;"></div>
                         </div>
                     </div>
                     <div>
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 4px;"><span>JavaScript</span><span>25%</span></div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 4px;"><span>HTML5</span><span>22.7%</span></div>
                         <div style="width: 100%; height: 6px; background: rgba(255,255,255,0.05); border-radius: 3px;">
-                            <div style="width: 25%; height: 100%; background: #f1e05a; border-radius: 3px;"></div>
+                            <div style="width: 22.7%; height: 100%; background: #e34c26; border-radius: 3px;"></div>
                         </div>
                     </div>
                     <div>
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 4px;"><span>C Language</span><span>10%</span></div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 4px;"><span>Python Systems</span><span>16.5%</span></div>
                         <div style="width: 100%; height: 6px; background: rgba(255,255,255,0.05); border-radius: 3px;">
-                            <div style="width: 10%; height: 100%; background: #555555; border-radius: 3px;"></div>
+                            <div style="width: 16.5%; height: 100%; background: #3572A5; border-radius: 3px;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 4px;"><span>CSS3 Skins</span><span>15.9%</span></div>
+                        <div style="width: 100%; height: 6px; background: rgba(255,255,255,0.05); border-radius: 3px;">
+                            <div style="width: 15.9%; height: 100%; background: #563d7c; border-radius: 3px;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 4px;"><span>C & Infrastructure</span><span>0.3%</span></div>
+                        <div style="width: 100%; height: 6px; background: rgba(255,255,255,0.05); border-radius: 3px;">
+                            <div style="width: 0.3%; height: 100%; background: #555555; border-radius: 3px;"></div>
                         </div>
                     </div>
                 </div>
@@ -74,104 +85,337 @@
         
         <!-- Aligned Filter Deck Controls -->
         <div class="filter-container glass-card" style="padding: 12px 20px; margin-bottom: 30px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
-            <span style="font-family: monospace; font-size: 13px; color: var(--text-muted);">⚡ FILTER_BY_STACK:</span>
+            <span style="font-family: monospace; font-size: 13px; color: var(--text-muted); font-family: monospace;">⚡ FILTER_BY_STACK:</span>
             <button class="filter-btn active" data-filter="all">ALL_SYSTEMS</button>
-            <button class="filter-btn" data-filter="python">PYTHON</button>
             <button class="filter-btn" data-filter="javascript">JAVASCRIPT</button>
+            <button class="filter-btn" data-filter="python">PYTHON</button>
+            <button class="filter-btn" data-filter="html-css">HTML_CSS</button>
             <button class="filter-btn" data-filter="c-language">C_LANGUAGE</button>
-            <button class="filter-btn" data-filter="godot">GODOT_GDSCRIPT</button>
         </div>
 
-        <!-- Portfolio Execution Grid -->
+        <!-- Portfolio Execution Grid (20 Verified Repositories) -->
         <div class="projects-grid" id="portfolio-grid">
             
-            <!-- System Node: Space Defenders -->
-            <div class="project-card glass-card" data-tags="godot">
+            <!-- 1. Chatwithollama -->
+            <div class="project-card glass-card" data-tags="html-css">
                 <div>
-                    <h3 style="color: var(--text-primary);">Space Defenders Architecture</h3>
-                    <p style="line-height: 1.6; margin-top: 8px;">A 2D space shooter architecture implementing custom physics, object-oriented collision tracking, and a decoupled event loop structure built using the Godot engine framework.</p>
-                    <div style="margin-top:12px; font-size: 13px; color: var(--text-muted); font-family: sans-serif;">
-                        <strong>Key Challenge:</strong> Signal execution syncing over complex asset instantiations.<br>
-                        <strong>Solution:</strong> Deployed decoupled listener event loops handling runtime rendering properties asynchronously.
-                    </div>
+                    <h3 style="color: var(--text-primary);">Chat with Ollama Portal</h3>
+                    <p style="line-height: 1.6; margin-top: 8px;">A standalone browser layout environment designed to connect and interface with locally compiled language models via native API structures.</p>
                 </div>
                 <div>
                     <div class="project-tags">
-                        <span>Godot Engine</span>
-                        <span>GDScript</span>
-                        <span>OOP Design</span>
+                        <span>HTML5</span>
+                        <span>API Hooking</span>
+                        <span>Interface Engine</span>
                     </div>
-                    <a href="https://github.com/HarshDev10218" target="_blank" class="project-link">Source Architecture &rarr;</a>
+                    <a href="https://github.com/HarshDev10218/Chatwithollama" target="_blank" class="project-link">Source Architecture &rarr;</a>
                 </div>
             </div>
 
-            <!-- System Node: DSA Visualizer -->
+            <!-- 2. CSS-PIKACHU -->
+            <div class="project-card glass-card" data-tags="html-css">
+                <div>
+                    <h3 style="color: var(--text-primary);">CSS Pikachu Render</h3>
+                    <p style="line-height: 1.6; margin-top: 8px;">A pure stylesheet structural layout assembling pixel-exact vector geometries and complex mathematical box-shadow properties without embedded graphics assets.</p>
+                </div>
+                <div>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3 Artwork</span>
+                        <span>Vector Geometry</span>
+                    </div>
+                    <a href="https://github.com/HarshDev10218/CSS-PIKACHU" target="_blank" class="project-link">Source Architecture &rarr;</a>
+                </div>
+            </div>
+
+            <!-- 3. Digital-Business-Card-Generator -->
+            <div class="project-card glass-card" data-tags="html-css">
+                <div>
+                    <h3 style="color: var(--text-primary);">Digital Business Card Generator</h3>
+                    <p style="line-height: 1.6; margin-top: 8px;">A dynamic structural content pipeline allowing rapid structural styling parsing to build printable, fully semantic clean-deck identity cards.</p>
+                </div>
+                <div>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>Semantic Document</span>
+                        <span>CSS Flexbox</span>
+                    </div>
+                    <a href="https://github.com/HarshDev10218/Digital-Business-Card-Generator" target="_blank" class="project-link">Source Architecture &rarr;</a>
+                </div>
+            </div>
+
+            <!-- 4. Soundboard -->
+            <div class="project-card glass-card" data-tags="html-css">
+                <div>
+                    <h3 style="color: var(--text-primary);">System Audio Soundboard</h3>
+                    <p style="line-height: 1.6; margin-top: 8px;">A modular styling framework mapping viewport constraints and smooth transitions onto dynamic layout buttons calibrated for fluid asset response states.</p>
+                </div>
+                <div>
+                    <div class="project-tags">
+                        <span>CSS3 UI</span>
+                        <span>Responsive Grid</span>
+                        <span>Transition Layers</span>
+                    </div>
+                    <a href="https://github.com/HarshDev10218/Soundboard" target="_blank" class="project-link">Source Architecture &rarr;</a>
+                </div>
+            </div>
+
+            <!-- 5. portfolio -->
+            <div class="project-card glass-card" data-tags="html-css">
+                <div>
+                    <h3 style="color: var(--text-primary);">Systems Hub Portfolio</h3>
+                    <p style="line-height: 1.6; margin-top: 8px;">Your central glassmorphic control dashboard deploying complex backdrop-filter constraints, custom CSS variables, and dynamic particle system anchors.</p>
+                </div>
+                <div>
+                    <div class="project-tags">
+                        <span>HTML5 Base</span>
+                        <span>Glassmorphism Engine</span>
+                        <span>Custom Variables</span>
+                    </div>
+                    <a href="https://github.com/HarshDev10218/portfolio" target="_blank" class="project-link">Source Architecture &rarr;</a>
+                </div>
+            </div>
+
+            <!-- 6. Autonomous-Browser-Agent -->
+            <div class="project-card glass-card" data-tags="javascript">
+                <div>
+                    <h3 style="color: var(--text-primary);">Autonomous Browser Agent</h3>
+                    <p style="line-height: 1.6; margin-top: 8px;">An intelligent client driver capable of traversing DOM node hierarchies and evaluating page structural patterns asynchronously.</p>
+                </div>
+                <div>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>DOM Navigation</span>
+                        <span>Client Automation</span>
+                    </div>
+                    <a href="https://github.com/HarshDev10218/Autonomous-Browser-Agent" target="_blank" class="project-link">Source Architecture &rarr;</a>
+                </div>
+            </div>
+
+            <!-- 7. Browser-Storage-Explorer -->
+            <div class="project-card glass-card" data-tags="javascript">
+                <div>
+                    <h3 style="color: var(--text-primary);">Browser Storage Explorer</h3>
+                    <p style="line-height: 1.6; margin-top: 8px;">An auditing platform reading, printing, and resetting local memory registers, application caches, and Session tokens securely inside browser engines.</p>
+                </div>
+                <div>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>LocalStorage Tracker</span>
+                        <span>State Inspection</span>
+                    </div>
+                    <a href="https://github.com/HarshDev10218/Browser-Storage-Explorer" target="_blank" class="project-link">Source Architecture &rarr;</a>
+                </div>
+            </div>
+
+            <!-- 8. Live-Collaborative-White-Board -->
+            <div class="project-card glass-card" data-tags="javascript">
+                <div>
+                    <h3 style="color: var(--text-primary);">Live Collaborative Whiteboard</h3>
+                    <p style="line-height: 1.6; margin-top: 8px;">A dynamic sketching workspace capturing pointer vector streams to paint responsive data onto geometric canvas objects fluidly.</p>
+                </div>
+                <div>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>Canvas2D API</span>
+                        <span>Vector Streams</span>
+                    </div>
+                    <a href="https://github.com/HarshDev10218/Live-Collaborative-White-Board" target="_blank" class="project-link">Source Architecture &rarr;</a>
+                </div>
+            </div>
+
+            <!-- 9. Human-vs-AI-Detector-Game -->
+            <div class="project-card glass-card" data-tags="javascript">
+                <div>
+                    <h3 style="color: var(--text-primary);">Human vs AI Detector Game</h3>
+                    <p style="line-height: 1.6; margin-top: 8px;">An interactive testing workspace tracking player decisions and sorting statistical validation logic across clean evaluation frames.</p>
+                </div>
+                <div>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>Evaluation Game</span>
+                        <span>Condition Parsing</span>
+                    </div>
+                    <a href="https://github.com/HarshDev10218/Human-vs-AI-Detector-Game" target="_blank" class="project-link">Source Architecture &rarr;</a>
+                </div>
+            </div>
+
+            <!-- 10. Image-Compression-Analyzer -->
+            <div class="project-card glass-card" data-tags="javascript">
+                <div>
+                    <h3 style="color: var(--text-primary);">Image Compression Analyzer</h3>
+                    <p style="line-height: 1.6; margin-top: 8px;">A data evaluation utility unpacking upload sizes and calculating byte reduction factors during graphic layout compilation procedures.</p>
+                </div>
+                <div>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>File Telemetry</span>
+                        <span>Data Scale Analysis</span>
+                    </div>
+                    <a href="https://github.com/HarshDev10218/Image-Compression-Analyzer" target="_blank" class="project-link">Source Architecture &rarr;</a>
+                </div>
+            </div>
+
+            <!-- 11. Kanban-Board -->
+            <div class="project-card glass-card" data-tags="javascript">
+                <div>
+                    <h3 style="color: var(--text-primary);">Interactive Kanban Suite</h3>
+                    <p style="line-height: 1.6; margin-top: 8px;">A functional operational management dashboard processing drag-and-drop actions to sort tracking nodes between persistent workspace column segments.</p>
+                </div>
+                <div>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>Drag & Drop API</span>
+                        <span>State Sync</span>
+                    </div>
+                    <a href="https://github.com/HarshDev10218/Kanban-Board" target="_blank" class="project-link">Source Architecture &rarr;</a>
+                </div>
+            </div>
+
+            <!-- 12. Habit-Streak-Tracker -->
+            <div class="project-card glass-card" data-tags="javascript">
+                <div>
+                    <h3 style="color: var(--text-primary);">Habit Streak Telemetry</h3>
+                    <p style="line-height: 1.6; margin-top: 8px;">A persistence engine monitoring recurrent action metrics and keeping chronologically correct count tracking records across active application reboots.</p>
+                </div>
+                <div>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>Data Storage</span>
+                        <span>Chronometer Logic</span>
+                    </div>
+                    <a href="https://github.com/HarshDev10218/Habit-Streak-Tracker" target="_blank" class="project-link">Source Architecture &rarr;</a>
+                </div>
+            </div>
+
+            <!-- 13. My_First_Chrome_Extension -->
+            <div class="project-card glass-card" data-tags="javascript">
+                <div>
+                    <h3 style="color: var(--text-primary);">Chrome Extensions Engine</h3>
+                    <p style="line-height: 1.6; margin-top: 8px;">A localized background script tracking active tab layouts and mutating live document configurations based on client rules.</p>
+                </div>
+                <div>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>Manifest V3</span>
+                        <span>Content Injectors</span>
+                    </div>
+                    <a href="https://github.com/HarshDev10218/My_First_Chrome_Extension" target="_blank" class="project-link">Source Architecture &rarr;</a>
+                </div>
+            </div>
+
+            <!-- 14. DSA-Visualization -->
             <div class="project-card glass-card" data-tags="python">
                 <div>
                     <h3 style="color: var(--text-primary);">DSA Visualizer Engine</h3>
-                    <p style="line-height: 1.6; margin-top: 8px;">An interactive execution suite visualizing algorithm states in real-time. Optimized to process complex data sorting operations smoothly without dropping frames.</p>
-                    <div style="margin-top:12px; font-size: 13px; color: var(--text-muted); font-family: sans-serif;">
-                        <strong>Key Challenge:</strong> Preventing UI locking during recursive execution.<br>
-                        <strong>Solution:</strong> Implemented modular state tracking chunks to handle data cleanly.
-                    </div>
+                    <p style="line-height: 1.6; margin-top: 8px;">An execution simulator providing structural visibility into sorting states and loop variables dynamically without engine lockups.</p>
                 </div>
                 <div>
                     <div class="project-tags">
                         <span>Python</span>
-                        <span>Algorithms</span>
+                        <span>Algorithm Maps</span>
                         <span>State Management</span>
                     </div>
                     <a href="https://github.com/HarshDev10218/DSA-Visualization" target="_blank" class="project-link">Source Architecture &rarr;</a>
                 </div>
             </div>
 
-            <!-- System Node: N//S//P Game Core -->
-            <div class="project-card glass-card" data-tags="javascript">
-                <div>
-                    <h3 style="color: var(--text-primary);">NSP Arcade Survival</h3>
-                    <p style="line-height: 1.6; margin-top: 8px;">An endless 2D survival game featuring dynamic enemy AI pathfinding, boss state machines, and an economy system. Optimized for performance with persistent player data handling and exponential difficulty scaling.</p>
-                </div>
-                <div>
-                    <div class="project-tags">
-                        <span>JavaScript</span>
-                        <span>HTML5 Canvas</span>
-                        <span>Game AI</span>
-                    </div>
-                    <a href="https://github.com/HarshDev10218" target="_blank" class="project-link">Source Architecture &rarr;</a>
-                </div>
-            </div>
-
-            <!-- System Node: App Control Hub -->
+            <!-- 15. Mini-Coding-language -->
             <div class="project-card glass-card" data-tags="python">
                 <div>
-                    <h3 style="color: var(--text-primary);">Desktop Hub Coordinator</h3>
-                    <p style="line-height: 1.6; margin-top: 8px;">A unified desktop control deck running standalone applications through decoupled interface structures and secure operational states.</p>
+                    <h3 style="color: var(--text-primary);">Mini Coding Language</h3>
+                    <p style="line-height: 1.6; margin-top: 8px;">A custom-built compiler routine organizing primitive variables, logic branches, and custom mathematical tokens into executable blocks.</p>
                 </div>
                 <div>
                     <div class="project-tags">
                         <span>Python</span>
-                        <span>Tkinter</span>
-                        <span>System Architecture</span>
+                        <span>Lexical Lexer</span>
+                        <span>Parsing Pipelines</span>
                     </div>
-                    <a href="https://github.com/HarshDev10218" target="_blank" class="project-link">Source Architecture &rarr;</a>
+                    <a href="https://github.com/HarshDev10218/Mini-Coding-language" target="_blank" class="project-link">Source Architecture &rarr;</a>
                 </div>
             </div>
 
-            <!-- System Node: Complexity Benchmarks -->
-            <div class="project-card glass-card" data-tags="c-language python">
+            <!-- 16. Space-defenders-pygame -->
+            <div class="project-card glass-card" data-tags="python">
                 <div>
-                    <h3 style="color: var(--text-primary);">Complexity & Look-up Systems</h3>
-                    <p style="line-height: 1.6; margin-top: 8px;">A benchmark compilation evaluating Big-O optimization arrays across diverse searching and sorting algorithms under various computer memory conditions.</p>
+                    <h3 style="color: var(--text-primary);">Space Defenders Core</h3>
+                    <p style="line-height: 1.6; margin-top: 8px;">A classical 2D arcade shooter loop handling high-performance velocity constraints and screen bounds monitoring natively using Pygame frameworks.</p>
+                </div>
+                <div>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Pygame Core</span>
+                        <span>Vector Tracking</span>
+                    </div>
+                    <a href="https://github.com/HarshDev10218/Space-defenders-pygame" target="_blank" class="project-link">Source Architecture &rarr;</a>
+                </div>
+            </div>
+
+            <!-- 17. SnakeGame-pygame -->
+            <div class="project-card glass-card" data-tags="python">
+                <div>
+                    <h3 style="color: var(--text-primary);">Snake Simulator Engine</h3>
+                    <p style="line-height: 1.6; margin-top: 8px;">A pixel grid tracking simulation utilizing coordinate checking matrices to handle self-intersection anomalies accurately.</p>
+                </div>
+                <div>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Pygame Window</span>
+                        <span>Grid Matrix</span>
+                    </div>
+                    <a href="https://github.com/HarshDev10218/SnakeGame-pygame" target="_blank" class="project-link">Source Architecture &rarr;</a>
+                </div>
+            </div>
+
+            <!-- 18. APP_HUB -->
+            <div class="project-card glass-card" data-tags="python">
+                <div>
+                    <h3 style="color: var(--text-primary);">Unified App Control Hub</h3>
+                    <p style="line-height: 1.6; margin-top: 8px;">A consolidated dashboard framework establishing interface bindings and operational triggers for standalone utility configurations.</p>
+                </div>
+                <div>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Interface Layouts</span>
+                        <span>System Anchors</span>
+                    </div>
+                    <a href="https://github.com/HarshDev10218/APP_HUB" target="_blank" class="project-link">Source Architecture &rarr;</a>
+                </div>
+            </div>
+
+            <!-- 19. WPM-Test -->
+            <div class="project-card glass-card" data-tags="python">
+                <div>
+                    <h3 style="color: var(--text-primary);">Words-Per-Minute Core</h3>
+                    <p style="line-height: 1.6; margin-top: 8px;">A calculation console evaluating character typing execution accuracy and timing durations against pre-parsed system source text blocks.</p>
+                </div>
+                <div>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Time Engine</span>
+                        <span>String Evaluation</span>
+                    </div>
+                    <a href="https://github.com/HarshDev10218/WPM-Test" target="_blank" class="project-link">Source Architecture &rarr;</a>
+                </div>
+            </div>
+
+            <!-- 20. BasicCalculator-c -->
+            <div class="project-card glass-card" data-tags="c-language">
+                <div>
+                    <h3 style="color: var(--text-primary);">Basic Calculator Binary Core</h3>
+                    <p style="line-height: 1.6; margin-top: 8px;">A hardware-efficient expression parser evaluating variable mathematical operations and structural data bounds inside native memory heaps.</p>
                 </div>
                 <div>
                     <div class="project-tags">
                         <span>C Language</span>
-                        <span>Python</span>
-                        <span>Data Retrieval</span>
+                        <span>Heap Bounds</span>
+                        <span>Low-Level Math</span>
                     </div>
-                    <a href="https://github.com/HarshDev10218/DSA-Visualization" target="_blank" class="project-link">Source Architecture &rarr;</a>
+                    <a href="https://github.com/HarshDev10218/BasicCalculator-c" target="_blank" class="project-link">Source Architecture &rarr;</a>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -180,12 +424,12 @@
         <h2 class="section-title">Future Technical Roadmap</h2>
         <div class="projects-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
             <div class="glass-card" style="padding: 25px;">
-                <h4 style="color: var(--accent-blue); margin-bottom: 10px; font-family: monospace;">Q3 2026: Cloud Architecture</h4>
-                <p style="font-size: 14px; line-height: 1.5;">Deploying modular software nodes onto micro-container runtimes and testing scaling boundaries across distributed systems.</p>
+                <h4 style="color: var(--accent-blue); margin-bottom: 10px; font-family: monospace;">Q3 2026: Container Meshes</h4>
+                <p style="font-size: 14px; line-height: 1.5;">Testing high-density container layouts and deployment frameworks across Kubernetes networks to evaluate real-world request bounds.</p>
             </div>
             <div class="glass-card" style="padding: 25px;">
-                <h4 style="color: var(--accent-blue); margin-bottom: 10px; font-family: monospace;">Q4 2026: Systems Engineering</h4>
-                <p style="font-size: 14px; line-height: 1.5;">Optimizing low-latency database queries and mapping high-load storage layouts to prevent operational processing leaks.</p>
+                <h4 style="color: var(--accent-blue); margin-bottom: 10px; font-family: monospace;">Q4 2026: Micro-Engine Design</h4>
+                <p style="font-size: 14px; line-height: 1.5;">Configuring zero-leak buffer streaming modules to achieve sub-millisecond data execution states across complex endpoints.</p>
             </div>
         </div>
     </section>
@@ -233,10 +477,10 @@
                 ">> System status: Nominal. Python algorithms running smooth.",
                 ">> Framework check: CBIT 10.0 CGPA layer fully compiled.",
                 ">> N//S//P survival vectors initialized. Clear to engage.",
-                ">> Remember to push your commits to the branch code.",
-                ">> Need responsive front-end configurations? Handled.",
-                ">> Testing core data structures... Loops verified.",
-                ">> Space Defenders physics metrics rendering successfully."
+                ">> Telemetry check: HTML/CSS design skins fully verified.",
+                ">> Reviewing live whiteboard canvas coordination paths.",
+                ">> Parsing language scripts inside the Mini Compiler deck.",
+                ">> Space Defenders engine tracking coordinates successfully."
             ];
 
             let quoteTimeout;
@@ -254,16 +498,13 @@
 
             if (pandaAvatar && pandaBubble) {
                 pandaAvatar.addEventListener("click", triggerPandaSpeech);
-
-                // Automated telemetry greeting trigger
                 setTimeout(() => {
-                    pandaBubble.textContent = ">> Uplink complete. Dashboard telemetry initialized.";
+                    pandaBubble.textContent = ">> Uplink complete. 20 production repository modules loaded.";
                     pandaBubble.classList.add("active");
                     setTimeout(() => pandaBubble.classList.remove("active"), 4000);
                 }, 2500);
             }
 
-            // --- 3. THEME SELECTION UTILITY ---
             const themeToggle = document.getElementById("theme-toggle");
             if (themeToggle) {
                 themeToggle.addEventListener("click", () => {
@@ -273,7 +514,6 @@
             }
         });
 
-        // --- 4. SCROLL ENGINE RUNTIME PROGRESS TRACKER ---
         window.addEventListener("scroll", () => {
             const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
             const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
